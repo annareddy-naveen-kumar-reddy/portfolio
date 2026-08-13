@@ -890,9 +890,13 @@
               <span id="formErrorMessage">Unable to send your message. Please try again or contact me directly by email: <a href="mailto:naveenkumarreddyannareddy@gmail.com" class="alert-link">naveenkumarreddyannareddy@gmail.com</a></span>
             </div>
 
-            <form id="contactForm" novalidate>
+            <form id="contactForm" action="https://formsubmit.co/naveenkumarreddyannareddy@gmail.com" method="POST" novalidate>
               <!-- Anti-Spam Honeypot -->
               <input type="text" name="_honey" id="formHoneypot" style="display:none !important;" tabindex="-1" autocomplete="off">
+              <!-- FormSubmit Configuration -->
+              <input type="hidden" name="_captcha" value="false">
+              <input type="hidden" name="_template" value="table">
+              <input type="hidden" name="_subject" id="hiddenSubject" value="[Portfolio Inquiry] New Message from Portfolio Visitor">
 
               <!-- 1. Full Name (Required) -->
               <div class="form-group" id="groupName">

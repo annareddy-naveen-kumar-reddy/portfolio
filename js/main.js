@@ -387,6 +387,11 @@ document.addEventListener('DOMContentLoaded', () => {
     submitBtn.classList.add('is-loading');
     if (submitBtnText) submitBtnText.textContent = 'Sending Message...';
 
+    const hiddenSubject = document.getElementById('hiddenSubject');
+    if (hiddenSubject) {
+      hiddenSubject.value = `[Portfolio Inquiry] ${subject} (from ${name})`;
+    }
+
     const payload = {
       name: name,
       email: email,
@@ -420,10 +425,24 @@ document.addEventListener('DOMContentLoaded', () => {
         // Scroll smoothly to alert if out of view
         formSuccessAlert?.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
       } else {
-        throw new Error(result.message || 'Server rejected submission');
+        // Check if activation is pending
+        if (result.message && (result.message.toLowerCase().includes('activate') || result.message.toLowerCase().includes('activation'))) {
+          formSuccessAlert?.classList.add('show');
+          showToast('Form submitted! Please check your email to activate the form.', 'info');
+          contactForm.reset();
+        } else {
+          throw new Error(result.message || 'Server rejected submission');
+        }
       }
     } catch (error) {
-      console.error('Contact Form Transmission Error:', error);
+      console.warn('AJAX submission note:', error.message);
+      
+      // If browsing directly via file:// protocol or fetch blocked by CORS, fallback to standard form POST
+      if (window.location.protocol === 'file:') {
+        contactForm.submit();
+        return;
+      }
+
       // Failed state
       formErrorAlert?.classList.add('show');
       showToast('Unable to send your message. Please try again or contact me directly by email.', 'error');
