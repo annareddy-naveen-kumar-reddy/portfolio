@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://annareddy-naveen-kumar-reddy.github.io/sitemap.xml
