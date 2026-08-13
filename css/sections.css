@@ -57,9 +57,11 @@
   color: var(--accent-cyan);
   font-family: var(--font-mono);
   font-weight: 800;
-  font-size: 1.1rem;
+  font-size: 0.85rem;
+  letter-spacing: 0.03em;
   box-shadow: var(--glow-cyan);
   transition: transform var(--transition-bounce), box-shadow var(--transition-bounce);
+  flex-shrink: 0;
 }
 
 .brand-logo:hover .logo-badge {
@@ -68,8 +70,9 @@
 }
 
 .brand-text-name {
-  font-size: 1.15rem;
+  font-size: 1.12rem;
   letter-spacing: -0.01em;
+  white-space: nowrap;
 }
 
 .brand-text-dot {
@@ -1273,3 +1276,18 @@
     align-items: flex-start;
   }
 }
+
+@media (max-width: 480px) {
+  .brand-text-name {
+    font-size: 0.95rem;
+  }
+  .brand-logo {
+    gap: 8px;
+  }
+  .logo-badge {
+    width: 36px;
+    height: 36px;
+    font-size: 0.78rem;
+  }
+}
+
