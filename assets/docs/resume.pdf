@@ -1,0 +1,127 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [3 0 R] /Count 1 >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595.28 841.89] /Resources << /Font << /F1 4 0 R /F2 5 0 R >> >> /Contents 6 0 R >>
+endobj
+4 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold >>
+endobj
+5 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+6 0 obj
+<< /Length 2100 >>
+stream
+BT
+/F1 18 Tf
+50 780 Td
+(ANNAREDDY NAVEEN KUMAR REDDY) Tj
+/F1 11 Tf
+0 -22 Td
+(B.Tech ECE Student | Aspiring Software Engineer) Tj
+/F2 9.5 Tf
+0 -16 Td
+(Location: Kadapa, Andhra Pradesh, India  |  Email: naveenkumarreddyannareddy@gmail.com  |  Phone: 7013998257) Tj
+0 -14 Td
+(GitHub: https://github.com/annareddy-naveen-kumar-reddy  |  LinkedIn: https://linkedin.com/in/annareddy-naveen-kumar-reddy-037343377) Tj
+
+0 -28 Td
+/F1 12 Tf
+(PROFESSIONAL SUMMARY) Tj
+0 -4 Td
+/F2 9.5 Tf
+0 -14 Td
+(Enthusiastic and technology-driven B.Tech Electronics and Communication Engineering student with a strong) Tj
+0 -13 Td
+(passion for Software Engineering, Python programming, Computer Vision, Artificial Intelligence, and IoT systems.) Tj
+0 -13 Td
+(Proven track record in building practical, real-world applications with high attention to performance and scalability.) Tj
+
+0 -26 Td
+/F1 12 Tf
+(EDUCATION) Tj
+0 -4 Td
+/F1 10 Tf
+0 -14 Td
+(Mohan Babu University - Bachelor of Technology (B.Tech)) Tj
+/F2 9.5 Tf
+0 -13 Td
+(Branch: Electronics and Communication Engineering (ECE)  |  Academic Period: 2025 - 2028  |  CGPA: 7.6) Tj
+/F1 10 Tf
+0 -16 Td
+(Loyola Polytechnic College - Diploma in Engineering) Tj
+/F2 9.5 Tf
+0 -13 Td
+(Branch: Electronics and Communication Engineering (ECE)  |  CGPA: 8.7 (First Class with Distinction)) Tj
+/F1 10 Tf
+0 -16 Td
+(ZPHS Nallingayapalli - Secondary School Certificate (SSC)) Tj
+/F2 9.5 Tf
+0 -13 Td
+(Academic Performance: 428 Marks) Tj
+
+0 -26 Td
+/F1 12 Tf
+(TECHNICAL SKILLS) Tj
+0 -4 Td
+/F2 9.5 Tf
+0 -14 Td
+(Programming Languages: Python, C++, SQL) Tj
+0 -13 Td
+(Web Development: HTML5, CSS3, JavaScript (ES6+), Flask) Tj
+0 -13 Td
+(AI & Computer Vision: Artificial Intelligence, Computer Vision, OpenCV, Face Recognition) Tj
+0 -13 Td
+(IoT & Embedded Systems: ESP32, IoT Protocols, Hardware Sensors, Embedded Systems) Tj
+0 -13 Td
+(Databases & APIs: SQLite, Google Sheets API) Tj
+0 -13 Td
+(Developer Tools: Git, GitHub, VS Code) Tj
+
+0 -26 Td
+/F1 12 Tf
+(FEATURED PROJECTS) Tj
+0 -4 Td
+/F1 10 Tf
+0 -14 Td
+(SmartLabTwinAI: Digital Twin for Laboratory Monitoring & Energy Management) Tj
+/F2 9 Tf
+0 -13 Td
+(- Designed an intelligent IoT + AI monitoring system with ESP32 microcontrollers and environmental/electrical sensors.) Tj
+0 -12 Td
+(- Integrated real-time temperature, humidity, voltage, and current tracking with AI anomaly detection.) Tj
+0 -12 Td
+(- Built predictive maintenance concept and digital twin telemetry dashboard for energy optimization.) Tj
+
+/F1 10 Tf
+0 -16 Td
+(AI Smart Attendance System: Automated Face Recognition & Cloud Sync) Tj
+/F2 9 Tf
+0 -13 Td
+(- Developed an end-to-end automated attendance solution using Python, OpenCV, Flask, and SQLite.) Tj
+0 -12 Td
+(- Implemented face dataset capture, real-time facial feature extraction, and proxy-free verification.) Tj
+0 -12 Td
+(- Created administrative web dashboard with Google Sheets cloud synchronization and Excel export.) Tj
+ET
+endstream
+endobj
+xref
+0 7
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000115 00000 n 
+0000000257 00000 n 
+0000000336 00000 n 
+0000000410 00000 n 
+trailer
+<< /Size 7 /Root 1 0 R >>
+startxref
+2565
+%%EOF

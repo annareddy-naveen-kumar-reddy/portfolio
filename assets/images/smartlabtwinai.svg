@@ -1,0 +1,137 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 380" width="100%" height="100%">
+  <defs>
+    <linearGradient id="labBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#090d16"/>
+      <stop offset="50%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#040711"/>
+    </linearGradient>
+    <linearGradient id="cyanGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0284c7"/>
+      <stop offset="100%" stop-color="#38bdf8"/>
+    </linearGradient>
+    <linearGradient id="purpleGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#6366f1"/>
+      <stop offset="100%" stop-color="#a855f7"/>
+    </linearGradient>
+    <linearGradient id="greenGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#059669"/>
+      <stop offset="100%" stop-color="#10b981"/>
+    </linearGradient>
+    <filter id="softGlow">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <!-- Background Frame -->
+  <rect width="600" height="380" rx="16" fill="url(#labBg)"/>
+  <rect x="1" y="1" width="598" height="378" rx="15" fill="none" stroke="#1e293b" stroke-width="1.5"/>
+
+  <!-- Top Window Header Bar -->
+  <rect x="0" y="0" width="600" height="42" rx="16" fill="#0f172a"/>
+  <circle cx="28" cy="21" r="5" fill="#ef4444"/>
+  <circle cx="46" cy="21" r="5" fill="#f59e0b"/>
+  <circle cx="64" cy="21" r="5" fill="#10b981"/>
+  
+  <text x="300" y="26" fill="#94a3b8" font-family="'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="600" text-anchor="middle" letter-spacing="1">
+    SMARTLABTWIN AI // DIGITAL TWIN TELEMETRY
+  </text>
+  
+  <g transform="translate(510, 14)">
+    <rect width="65" height="16" rx="8" fill="#052e16" stroke="#10b981" stroke-width="0.75"/>
+    <circle cx="10" cy="8" r="3" fill="#10b981"/>
+    <text x="38" y="12" fill="#34d399" font-family="monospace" font-size="9" font-weight="700" text-anchor="middle">ONLINE</text>
+  </g>
+
+  <!-- Grid Blueprint Background -->
+  <g opacity="0.08" stroke="#38bdf8" stroke-width="1">
+    <line x1="0" y1="90" x2="600" y2="90"/>
+    <line x1="0" y1="150" x2="600" y2="150"/>
+    <line x1="0" y1="210" x2="600" y2="210"/>
+    <line x1="0" y1="270" x2="600" y2="270"/>
+    <line x1="0" y1="330" x2="600" y2="330"/>
+    <line x1="150" y1="42" x2="150" y2="380"/>
+    <line x1="300" y1="42" x2="300" y2="380"/>
+    <line x1="450" y1="42" x2="450" y2="380"/>
+  </g>
+
+  <!-- Card 1: ESP32 IoT Hub -->
+  <g transform="translate(24, 60)">
+    <rect width="165" height="140" rx="10" fill="#0f172a" fill-opacity="0.8" stroke="#1e293b" stroke-width="1.2"/>
+    <text x="14" y="24" fill="#64748b" font-family="'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="700" letter-spacing="0.5">ESP32 SENSOR HUB</text>
+    
+    <!-- Microcontroller Chip Icon -->
+    <rect x="14" y="40" width="50" height="50" rx="6" fill="#1e293b" stroke="#38bdf8" stroke-width="1.5"/>
+    <text x="39" y="68" fill="#38bdf8" font-family="monospace" font-size="10" font-weight="700" text-anchor="middle">MCU</text>
+    
+    <!-- Connected Telemetry -->
+    <text x="76" y="55" fill="#f1f5f9" font-family="sans-serif" font-size="11" font-weight="600">Temp: 24.8°C</text>
+    <text x="76" y="75" fill="#f1f5f9" font-family="sans-serif" font-size="11" font-weight="600">Hum: 48.2%</text>
+    <text x="76" y="95" fill="#f1f5f9" font-family="sans-serif" font-size="11" font-weight="600">Volt: 230.4 V</text>
+    
+    <path d="M14 110 L150 110" stroke="#334155" stroke-width="1"/>
+    <text x="14" y="126" fill="#10b981" font-family="monospace" font-size="10">● Sampling: 100ms</text>
+  </g>
+
+  <!-- Card 2: AI Anomaly & Predictive Maintenance Center -->
+  <g transform="translate(205, 60)">
+    <rect width="370" height="140" rx="10" fill="#0f172a" fill-opacity="0.8" stroke="#1e293b" stroke-width="1.2"/>
+    <text x="16" y="24" fill="#64748b" font-family="'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="700" letter-spacing="0.5">AI ANOMALY DETECTION ENGINE</text>
+    
+    <!-- Live Wave Graph -->
+    <path d="M16 85 Q 50 45, 90 85 T 160 85 T 220 50 T 280 90 T 350 75" fill="none" stroke="url(#cyanGrad)" stroke-width="2.5" filter="url(#softGlow)"/>
+    <path d="M16 100 Q 60 70, 110 100 T 200 110 T 270 95 T 350 105" fill="none" stroke="url(#purpleGrad)" stroke-width="1.5" stroke-dasharray="3,3"/>
+    
+    <!-- AI Status Badges -->
+    <g transform="translate(16, 115)">
+      <rect width="90" height="18" rx="4" fill="#1e1b4b" stroke="#6366f1" stroke-width="0.8"/>
+      <text x="45" y="13" fill="#a5b4fc" font-family="sans-serif" font-size="9" font-weight="600" text-anchor="middle">Model: IsolationForest</text>
+    </g>
+    <g transform="translate(115, 115)">
+      <rect width="105" height="18" rx="4" fill="#064e3b" stroke="#10b981" stroke-width="0.8"/>
+      <text x="52" y="13" fill="#6ee7b7" font-family="sans-serif" font-size="9" font-weight="600" text-anchor="middle">Health Score: 98.4%</text>
+    </g>
+    <g transform="translate(230, 115)">
+      <rect width="120" height="18" rx="4" fill="#172554" stroke="#38bdf8" stroke-width="0.8"/>
+      <text x="60" y="13" fill="#93c5fd" font-family="sans-serif" font-size="9" font-weight="600" text-anchor="middle">Pred Maintenance: OK</text>
+    </g>
+  </g>
+
+  <!-- Bottom Strip: Energy & Power Twin Grid -->
+  <g transform="translate(24, 215)">
+    <rect width="551" height="145" rx="10" fill="#0b1120" fill-opacity="0.9" stroke="#1e293b" stroke-width="1.2"/>
+    
+    <!-- Left Metric: Power Usage -->
+    <g transform="translate(20, 20)">
+      <text x="0" y="0" fill="#64748b" font-family="sans-serif" font-size="10" font-weight="700">POWER CONSUMPTION</text>
+      <text x="0" y="32" fill="#38bdf8" font-family="'Segoe UI', Roboto, monospace" font-size="28" font-weight="700">1.42 <tspan font-size="14" fill="#94a3b8">kW/h</tspan></text>
+      <text x="0" y="52" fill="#10b981" font-family="sans-serif" font-size="10">▼ 12% Smart Energy Opt</text>
+    </g>
+
+    <!-- Center Metric: Digital Twin State -->
+    <g transform="translate(180, 20)">
+      <text x="0" y="0" fill="#64748b" font-family="sans-serif" font-size="10" font-weight="700">DIGITAL TWIN STATUS</text>
+      <rect x="0" y="15" width="160" height="10" rx="5" fill="#1e293b"/>
+      <rect x="0" y="15" width="138" height="10" rx="5" fill="url(#cyanGrad)"/>
+      <text x="0" y="42" fill="#cbd5e1" font-family="sans-serif" font-size="11">Synchronized with Physical Lab</text>
+      <text x="0" y="60" fill="#64748b" font-family="monospace" font-size="9">Latency: 14ms | Latched I/O</text>
+    </g>
+
+    <!-- Right Metric: Environment & Safety -->
+    <g transform="translate(370, 20)">
+      <text x="0" y="0" fill="#64748b" font-family="sans-serif" font-size="10" font-weight="700">SAFETY SENSORS</text>
+      <g transform="translate(0, 16)">
+        <circle cx="8" cy="8" r="4" fill="#10b981"/>
+        <text x="20" y="12" fill="#e2e8f0" font-family="sans-serif" font-size="11">Smoke / Fire: Normal</text>
+      </g>
+      <g transform="translate(0, 40)">
+        <circle cx="8" cy="8" r="4" fill="#10b981"/>
+        <text x="20" y="12" fill="#e2e8f0" font-family="sans-serif" font-size="11">Current Spike: Guard Active</text>
+      </g>
+    </g>
+
+    <!-- Interactive Bottom Bar -->
+    <line x1="20" y1="105" x2="530" y2="105" stroke="#1e293b" stroke-width="1"/>
+    <text x="20" y="128" fill="#38bdf8" font-family="monospace" font-size="11" font-weight="600">⚡ Python Backend + Flask Web Dashboard + ESP32 Telemetry</text>
+  </g>
+</svg>

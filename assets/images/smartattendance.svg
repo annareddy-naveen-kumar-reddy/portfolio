@@ -1,0 +1,138 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 380" width="100%" height="100%">
+  <defs>
+    <linearGradient id="attBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b1120"/>
+      <stop offset="50%" stop-color="#111827"/>
+      <stop offset="100%" stop-color="#030712"/>
+    </linearGradient>
+    <linearGradient id="scanGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#38bdf8" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#38bdf8" stop-opacity="0.8"/>
+    </linearGradient>
+    <linearGradient id="neonBlue" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="100%" stop-color="#6366f1"/>
+    </linearGradient>
+    <filter id="visionGlow">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <!-- Background Frame -->
+  <rect width="600" height="380" rx="16" fill="url(#attBg)"/>
+  <rect x="1" y="1" width="598" height="378" rx="15" fill="none" stroke="#1f2937" stroke-width="1.5"/>
+
+  <!-- Top App Window Bar -->
+  <rect x="0" y="0" width="600" height="42" rx="16" fill="#111827"/>
+  <circle cx="28" cy="21" r="5" fill="#ef4444"/>
+  <circle cx="46" cy="21" r="5" fill="#f59e0b"/>
+  <circle cx="64" cy="21" r="5" fill="#10b981"/>
+  
+  <text x="300" y="26" fill="#9ca3af" font-family="'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="600" text-anchor="middle" letter-spacing="1">
+    AI SMART ATTENDANCE SYSTEM // OPENCV + FLASK ENGINE
+  </text>
+
+  <!-- Left Column: Video Feed & Face Landmark Mesh -->
+  <g transform="translate(24, 60)">
+    <!-- Video Feed Container -->
+    <rect width="280" height="295" rx="12" fill="#030712" stroke="#1f2937" stroke-width="1.2"/>
+    
+    <!-- Camera Viewfinder Corners -->
+    <path d="M16 35 L16 16 L35 16" fill="none" stroke="#38bdf8" stroke-width="2"/>
+    <path d="M264 35 L264 16 L245 16" fill="none" stroke="#38bdf8" stroke-width="2"/>
+    <path d="M16 260 L16 279 L35 279" fill="none" stroke="#38bdf8" stroke-width="2"/>
+    <path d="M264 260 L264 279 L245 279" fill="none" stroke="#38bdf8" stroke-width="2"/>
+
+    <!-- Scanning Line Beam -->
+    <rect x="20" y="120" width="240" height="30" fill="url(#scanGrad)"/>
+    <line x1="20" y1="150" x2="260" y2="150" stroke="#38bdf8" stroke-width="2" filter="url(#visionGlow)"/>
+
+    <!-- Face Bounding Box -->
+    <rect x="70" y="55" width="140" height="165" rx="10" fill="none" stroke="#10b981" stroke-width="2" stroke-dasharray="4,3"/>
+    
+    <!-- Face Landmark Points / Triangulation Mesh -->
+    <!-- Eyes -->
+    <circle cx="115" cy="115" r="3" fill="#38bdf8"/>
+    <circle cx="165" cy="115" r="3" fill="#38bdf8"/>
+    <line x1="115" y1="115" x2="165" y2="115" stroke="#38bdf8" stroke-width="1" opacity="0.6"/>
+    <!-- Nose & Mouth -->
+    <circle cx="140" cy="140" r="3" fill="#38bdf8"/>
+    <circle cx="125" cy="170" r="2.5" fill="#38bdf8"/>
+    <circle cx="155" cy="170" r="2.5" fill="#38bdf8"/>
+    <line x1="125" y1="170" x2="155" y2="170" stroke="#38bdf8" stroke-width="1" opacity="0.6"/>
+    <!-- Mesh Connections -->
+    <path d="M115 115 L140 140 L165 115 M140 140 L125 170 M140 140 L155 170 M115 115 L85 130 L125 170 M165 115 L195 130 L155 170" fill="none" stroke="#38bdf8" stroke-width="0.7" opacity="0.4"/>
+
+    <!-- Recognition Tag Floating on Face Box -->
+    <g transform="translate(65, 30)">
+      <rect width="150" height="22" rx="4" fill="#064e3b" stroke="#10b981" stroke-width="1"/>
+      <text x="75" y="15" fill="#6ee7b7" font-family="sans-serif" font-size="10" font-weight="700" text-anchor="middle">MATCH: 99.2% [CONFIRMED]</text>
+    </g>
+
+    <!-- FPS & Camera Stats -->
+    <text x="20" y="270" fill="#64748b" font-family="monospace" font-size="10">FPS: 32.4 | Res: 1080p | OpenCV</text>
+  </g>
+
+  <!-- Right Column: Database Records & Google Sheets Sync -->
+  <g transform="translate(320, 60)">
+    <!-- Header Title -->
+    <rect width="255" height="40" rx="8" fill="#1e293b" fill-opacity="0.8"/>
+    <text x="14" y="25" fill="#e2e8f0" font-family="sans-serif" font-size="12" font-weight="700">REAL-TIME ATTENDANCE LOG</text>
+
+    <!-- Table Rows -->
+    <!-- Row 1 (Just Marked) -->
+    <g transform="translate(0, 50)">
+      <rect width="255" height="42" rx="6" fill="#064e3b" fill-opacity="0.4" stroke="#10b981" stroke-width="0.8"/>
+      <circle cx="16" cy="21" r="5" fill="#10b981"/>
+      <text x="32" y="18" fill="#f1f5f9" font-family="sans-serif" font-size="11" font-weight="600">Student #1042 - PRESENT</text>
+      <text x="32" y="32" fill="#94a3b8" font-family="monospace" font-size="9">Logged: 09:00:14 AM | Camera 1</text>
+      <rect x="195" y="12" width="48" height="18" rx="4" fill="#047857"/>
+      <text x="219" y="25" fill="#fff" font-family="sans-serif" font-size="9" font-weight="700" text-anchor="middle">SYNCED</text>
+    </g>
+
+    <!-- Row 2 -->
+    <g transform="translate(0, 100)">
+      <rect width="255" height="42" rx="6" fill="#1e293b" fill-opacity="0.4" stroke="#334155" stroke-width="0.8"/>
+      <circle cx="16" cy="21" r="5" fill="#38bdf8"/>
+      <text x="32" y="18" fill="#f1f5f9" font-family="sans-serif" font-size="11" font-weight="600">Student #1041 - PRESENT</text>
+      <text x="32" y="32" fill="#94a3b8" font-family="monospace" font-size="9">Logged: 08:59:48 AM | Camera 1</text>
+      <rect x="195" y="12" width="48" height="18" rx="4" fill="#1e293b"/>
+      <text x="219" y="25" fill="#94a3b8" font-family="sans-serif" font-size="9" font-weight="700" text-anchor="middle">SYNCED</text>
+    </g>
+
+    <!-- Row 3 -->
+    <g transform="translate(0, 150)">
+      <rect width="255" height="42" rx="6" fill="#1e293b" fill-opacity="0.4" stroke="#334155" stroke-width="0.8"/>
+      <circle cx="16" cy="21" r="5" fill="#38bdf8"/>
+      <text x="32" y="18" fill="#f1f5f9" font-family="sans-serif" font-size="11" font-weight="600">Student #1040 - PRESENT</text>
+      <text x="32" y="32" fill="#94a3b8" font-family="monospace" font-size="9">Logged: 08:58:22 AM | Camera 1</text>
+      <rect x="195" y="12" width="48" height="18" rx="4" fill="#1e293b"/>
+      <text x="219" y="25" fill="#94a3b8" font-family="sans-serif" font-size="9" font-weight="700" text-anchor="middle">SYNCED</text>
+    </g>
+
+    <!-- Database / Cloud Sync Status Card -->
+    <g transform="translate(0, 202)">
+      <rect width="255" height="93" rx="8" fill="#0f172a" stroke="#1e293b" stroke-width="1"/>
+      
+      <!-- SQLite + Google Sheets sync icons -->
+      <g transform="translate(14, 14)">
+        <rect width="28" height="28" rx="6" fill="#1e293b" stroke="#38bdf8" stroke-width="1"/>
+        <text x="14" y="18" fill="#38bdf8" font-family="monospace" font-size="9" font-weight="700" text-anchor="middle">SQL</text>
+      </g>
+      <path d="M48 28 L68 28" stroke="#38bdf8" stroke-width="1.5" stroke-dasharray="3,2"/>
+      <g transform="translate(74, 14)">
+        <rect width="28" height="28" rx="6" fill="#064e3b" stroke="#10b981" stroke-width="1"/>
+        <text x="14" y="18" fill="#34d399" font-family="monospace" font-size="9" font-weight="700" text-anchor="middle">API</text>
+      </g>
+      
+      <text x="112" y="24" fill="#f8fafc" font-family="sans-serif" font-size="10" font-weight="700">Google Sheets Cloud</text>
+      <text x="112" y="38" fill="#10b981" font-family="sans-serif" font-size="9">Auto-Sync Active (Live)</text>
+      
+      <line x1="14" y1="52" x2="240" y2="52" stroke="#1e293b" stroke-width="1"/>
+      <text x="14" y="72" fill="#94a3b8" font-family="sans-serif" font-size="10">Automated CSV / Excel Export Ready</text>
+      <text x="14" y="85" fill="#38bdf8" font-family="monospace" font-size="9">Flask Web Admin Dashboard</text>
+    </g>
+  </g>
+</svg>
