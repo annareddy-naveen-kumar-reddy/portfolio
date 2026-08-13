@@ -69,15 +69,7 @@
     ],
     "knowsAbout": [
       "Python",
-      "C++",
-      "SQL",
-      "Artificial Intelligence",
-      "Computer Vision",
-      "OpenCV",
-      "IoT",
-      "ESP32",
-      "Flask",
-      "Embedded Systems"
+      "C Language"
     ]
   }
   </script>
@@ -354,177 +346,89 @@
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
             Technical Stack
           </span>
-          <h2 class="section-title">Skills &amp; Competencies</h2>
-          <p class="section-description">Core programming languages, frameworks, hardware platforms, and developer tools in my technical arsenal.</p>
+          <h2 class="section-title">Technical Skills</h2>
+          <p class="section-description">Core programming languages and computational problem-solving foundations.</p>
         </div>
 
-        <!-- Category Filter Tabs -->
-        <div class="filter-wrapper">
-          <div class="filter-tabs" role="tablist" aria-label="Filter skills by domain">
-            <button class="filter-btn active" data-filter="all">All Skills</button>
-            <button class="filter-btn" data-filter="programming">Programming</button>
-            <button class="filter-btn" data-filter="web">Web Development</button>
-            <button class="filter-btn" data-filter="ai">AI &amp; Computer Vision</button>
-            <button class="filter-btn" data-filter="iot">IoT &amp; Embedded</button>
-            <button class="filter-btn" data-filter="tools">Tools &amp; APIs</button>
-          </div>
-        </div>
-
-        <!-- Categorized Skills Grid (Truthful Badges, No Fabricated Percentages) -->
-        <div class="skills-grid" id="skillsGrid">
+        <!-- Focused Skills Grid (Python & C Language) -->
+        <div class="skills-grid" id="skillsGrid" style="grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); max-width: 900px; margin: 0 auto;">
           
-          <!-- Category 1: Programming -->
-          <div class="glass-card skill-category-card" data-category="programming">
+          <!-- Skill 1: Python -->
+          <div class="glass-card skill-category-card card-interactive" data-category="programming">
             <div class="skill-cat-header">
-              <div class="skill-cat-icon">
+              <div class="skill-cat-icon" style="background: var(--accent-cyan-dim); border-color: var(--accent-cyan);">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
               </div>
-              <h3 class="skill-cat-title">Programming Languages</h3>
+              <div>
+                <h3 class="skill-cat-title">Python</h3>
+                <span class="badge badge-cyan" style="margin-top: 4px;">Programming Language</span>
+              </div>
             </div>
+
+            <p style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.65; margin-bottom: 20px;">
+              Core programming language applied across software development, data structures, algorithms, automation, and practical problem solving.
+            </p>
+
             <div class="skill-items-list">
               <div class="skill-item-pill">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
-                Python
+                Core Python
               </div>
               <div class="skill-item-pill">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
-                C++
+                Data Structures
               </div>
               <div class="skill-item-pill">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
-                SQL
+                Object-Oriented Programming (OOP)
+              </div>
+              <div class="skill-item-pill">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                Algorithm Design &amp; Logic
+              </div>
+              <div class="skill-item-pill">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                Problem Solving
               </div>
             </div>
           </div>
 
-          <!-- Category 2: Web Development -->
-          <div class="glass-card skill-category-card" data-category="web">
+          <!-- Skill 2: C Language -->
+          <div class="glass-card skill-category-card card-interactive" data-category="programming">
             <div class="skill-cat-header">
-              <div class="skill-cat-icon">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
-              </div>
-              <h3 class="skill-cat-title">Web Development</h3>
-            </div>
-            <div class="skill-items-list">
-              <div class="skill-item-pill">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
-                HTML
-              </div>
-              <div class="skill-item-pill">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
-                CSS
-              </div>
-              <div class="skill-item-pill">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
-                JavaScript
-              </div>
-              <div class="skill-item-pill">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
-                Flask
-              </div>
-            </div>
-          </div>
-
-          <!-- Category 3: Database -->
-          <div class="glass-card skill-category-card" data-category="programming">
-            <div class="skill-cat-header">
-              <div class="skill-cat-icon">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><ellipse cx="12" cy="5" rx="9" ry="3"></ellipse><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path></svg>
-              </div>
-              <h3 class="skill-cat-title">Databases &amp; Storage</h3>
-            </div>
-            <div class="skill-items-list">
-              <div class="skill-item-pill">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
-                SQL Queries
-              </div>
-              <div class="skill-item-pill">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
-                SQLite
-              </div>
-            </div>
-          </div>
-
-          <!-- Category 4: AI / Computer Vision -->
-          <div class="glass-card skill-category-card" data-category="ai">
-            <div class="skill-cat-header">
-              <div class="skill-cat-icon">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
-              </div>
-              <h3 class="skill-cat-title">AI &amp; Computer Vision</h3>
-            </div>
-            <div class="skill-items-list">
-              <div class="skill-item-pill">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
-                Artificial Intelligence
-              </div>
-              <div class="skill-item-pill">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
-                Computer Vision
-              </div>
-              <div class="skill-item-pill">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
-                OpenCV
-              </div>
-              <div class="skill-item-pill">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
-                Face Recognition
-              </div>
-            </div>
-          </div>
-
-          <!-- Category 5: IoT / Embedded -->
-          <div class="glass-card skill-category-card" data-category="iot">
-            <div class="skill-cat-header">
-              <div class="skill-cat-icon">
+              <div class="skill-cat-icon" style="background: var(--accent-indigo-dim); border-color: var(--accent-indigo);">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="4" width="16" height="16" rx="2" ry="2"></rect><rect x="9" y="9" width="6" height="6"></rect><line x1="9" y1="1" x2="9" y2="4"></line><line x1="15" y1="1" x2="15" y2="4"></line><line x1="9" y1="20" x2="9" y2="23"></line><line x1="15" y1="20" x2="15" y2="23"></line><line x1="20" y1="9" x2="23" y2="9"></line><line x1="20" y1="14" x2="23" y2="14"></line><line x1="1" y1="9" x2="4" y2="9"></line><line x1="1" y1="14" x2="4" y2="14"></line></svg>
               </div>
-              <h3 class="skill-cat-title">IoT &amp; Embedded Systems</h3>
-            </div>
-            <div class="skill-items-list">
-              <div class="skill-item-pill">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
-                ESP32
-              </div>
-              <div class="skill-item-pill">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
-                IoT
-              </div>
-              <div class="skill-item-pill">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
-                Hardware Sensors
-              </div>
-              <div class="skill-item-pill">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
-                Embedded Systems
+              <div>
+                <h3 class="skill-cat-title">C Language</h3>
+                <span class="badge badge-indigo" style="margin-top: 4px;">Programming Language</span>
               </div>
             </div>
-          </div>
 
-          <!-- Category 6: Tools & Platforms -->
-          <div class="glass-card skill-category-card" data-category="tools">
-            <div class="skill-cat-header">
-              <div class="skill-cat-icon">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path></svg>
-              </div>
-              <h3 class="skill-cat-title">Tools &amp; APIs</h3>
-            </div>
+            <p style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.65; margin-bottom: 20px;">
+              Foundational procedural programming, building core algorithmic logic, understanding memory concepts, pointers, and structured engineering workflows.
+            </p>
+
             <div class="skill-items-list">
               <div class="skill-item-pill">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
-                Git
+                Procedural Programming
               </div>
               <div class="skill-item-pill">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
-                GitHub
+                Pointers &amp; Memory Basics
               </div>
               <div class="skill-item-pill">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
-                VS Code
+                Arrays &amp; Strings
               </div>
               <div class="skill-item-pill">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
-                Google Sheets API
+                Functions &amp; Recursion
+              </div>
+              <div class="skill-item-pill">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                Structured Problem Solving
               </div>
             </div>
           </div>
@@ -871,7 +775,7 @@
             </div>
             <div class="resume-point">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
-              <span><strong>Core Technologies:</strong> Python, C++, SQL, Flask, OpenCV, ESP32</span>
+              <span><strong>Core Languages:</strong> Python, C Language</span>
             </div>
             <div class="resume-point">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
@@ -1126,12 +1030,8 @@
         <div style="margin-bottom: 20px;">
           <h4 style="color: var(--accent-cyan); margin-bottom: 8px; border-bottom: 1px solid var(--border-subtle); padding-bottom: 4px;">Technical Skills Summary</h4>
           <p style="font-size: 0.92rem; color: var(--text-secondary); line-height: 1.6;">
-            <strong>Languages:</strong> Python, C++, SQL<br>
-            <strong>Web &amp; Frameworks:</strong> HTML, CSS, JavaScript, Flask<br>
-            <strong>Databases &amp; APIs:</strong> SQLite, Google Sheets API<br>
-            <strong>AI &amp; Vision:</strong> Artificial Intelligence, Computer Vision, OpenCV, Face Recognition<br>
-            <strong>IoT &amp; Hardware:</strong> ESP32, IoT Sensors, Embedded Systems<br>
-            <strong>Developer Tools:</strong> Git, GitHub, VS Code
+            <strong>Programming Languages:</strong> Python, C Language<br>
+            <strong>Core Focus:</strong> Algorithmic Logic, Data Structures, OOP, Procedural Programming, Problem Solving
           </p>
         </div>
 

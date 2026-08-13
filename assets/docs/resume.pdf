@@ -15,7 +15,7 @@ endobj
 << /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
 endobj
 6 0 obj
-<< /Length 2100 >>
+<< /Length 2000 >>
 stream
 BT
 /F1 18 Tf
@@ -38,9 +38,9 @@ BT
 0 -14 Td
 (Enthusiastic and technology-driven B.Tech Electronics and Communication Engineering student with a strong) Tj
 0 -13 Td
-(passion for Software Engineering, Python programming, Computer Vision, Artificial Intelligence, and IoT systems.) Tj
+(focus on software programming in Python and C Language, algorithmic problem solving, and structured engineering.) Tj
 0 -13 Td
-(Proven track record in building practical, real-world applications with high attention to performance and scalability.) Tj
+(Proven track record in building practical, real-world project solutions with high attention to clean logic and rigor.) Tj
 
 0 -26 Td
 /F1 12 Tf
@@ -71,17 +71,9 @@ BT
 0 -4 Td
 /F2 9.5 Tf
 0 -14 Td
-(Programming Languages: Python, C++, SQL) Tj
+(Programming Languages: Python, C Language) Tj
 0 -13 Td
-(Web Development: HTML5, CSS3, JavaScript (ES6+), Flask) Tj
-0 -13 Td
-(AI & Computer Vision: Artificial Intelligence, Computer Vision, OpenCV, Face Recognition) Tj
-0 -13 Td
-(IoT & Embedded Systems: ESP32, IoT Protocols, Hardware Sensors, Embedded Systems) Tj
-0 -13 Td
-(Databases & APIs: SQLite, Google Sheets API) Tj
-0 -13 Td
-(Developer Tools: Git, GitHub, VS Code) Tj
+(Core Competencies: Data Structures, OOP, Procedural Programming, Pointers & Memory Basics, Problem Solving) Tj
 
 0 -26 Td
 /F1 12 Tf
@@ -92,22 +84,18 @@ BT
 (SmartLabTwinAI: Digital Twin for Laboratory Monitoring & Energy Management) Tj
 /F2 9 Tf
 0 -13 Td
-(- Designed an intelligent IoT + AI monitoring system with ESP32 microcontrollers and environmental/electrical sensors.) Tj
+(- Designed an intelligent monitoring system combining sensor telemetry, anomaly detection, and predictive maintenance.) Tj
 0 -12 Td
-(- Integrated real-time temperature, humidity, voltage, and current tracking with AI anomaly detection.) Tj
-0 -12 Td
-(- Built predictive maintenance concept and digital twin telemetry dashboard for energy optimization.) Tj
+(- Integrated real-time temperature, humidity, voltage, and current tracking with AI-assisted alert concepts.) Tj
 
 /F1 10 Tf
 0 -16 Td
 (AI Smart Attendance System: Automated Face Recognition & Cloud Sync) Tj
 /F2 9 Tf
 0 -13 Td
-(- Developed an end-to-end automated attendance solution using Python, OpenCV, Flask, and SQLite.) Tj
+(- Developed an automated attendance solution using Python, OpenCV, and structured database storage.) Tj
 0 -12 Td
 (- Implemented face dataset capture, real-time facial feature extraction, and proxy-free verification.) Tj
-0 -12 Td
-(- Created administrative web dashboard with Google Sheets cloud synchronization and Excel export.) Tj
 ET
 endstream
 endobj
@@ -123,5 +111,5 @@ xref
 trailer
 << /Size 7 /Root 1 0 R >>
 startxref
-2565
+2300
 %%EOF
