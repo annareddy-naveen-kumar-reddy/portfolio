@@ -112,7 +112,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   // =========================================================================
-  // 4. Animated Numerical Stat Counters (e.g. 2+, 8.7, 8.2, 100%)
+  // 4. Animated Numerical Stat Counters (e.g. 2+, 8.7, 7.6, 100%)
   // =========================================================================
   const counters = document.querySelectorAll('.counter');
   
