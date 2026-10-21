@@ -323,9 +323,11 @@
 /* Hero Portrait / Tech Graphic Visual */
 .hero-visual-wrapper {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   position: relative;
+  perspective: 1000px;
 }
 
 .hero-portrait-frame {
@@ -334,9 +336,21 @@
   height: 320px;
   border-radius: var(--border-radius-xl);
   padding: 10px;
-  background: linear-gradient(135deg, rgba(56, 189, 248, 0.2) 0%, rgba(99, 102, 241, 0.2) 100%);
+  background: linear-gradient(135deg, rgba(56, 189, 248, 0.25) 0%, rgba(99, 102, 241, 0.25) 100%);
   border: 1px solid var(--border-accent);
-  box-shadow: 0 0 40px rgba(56, 189, 248, 0.2);
+  box-shadow: 0 0 45px rgba(56, 189, 248, 0.25), 0 15px 35px rgba(0, 0, 0, 0.4);
+  transform-style: preserve-3d;
+  transition: transform 0.25s cubic-bezier(0.25, 0.46, 0.45, 0.94), box-shadow var(--transition-smooth);
+  animation: hero3DFloat 5s ease-in-out infinite alternate;
+}
+
+@keyframes hero3DFloat {
+  0% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  100% {
+    transform: translateY(-8px) rotate(0.5deg);
+  }
 }
 
 .hero-portrait-inner {
@@ -353,11 +367,61 @@
   height: 100%;
   object-fit: cover;
   object-position: center 15%;
-  transition: transform var(--transition-smooth);
+  transition: opacity 0.3s ease, transform var(--transition-smooth);
 }
 
 .hero-portrait-frame:hover .hero-portrait-img {
-  transform: scale(1.04);
+  transform: scale(1.03);
+}
+
+/* Animated Floating Welcome Badge */
+.welcome-speech-bubble {
+  position: absolute;
+  top: -20px;
+  left: -20px;
+  background: rgba(15, 23, 42, 0.88);
+  border: 1px solid rgba(56, 189, 248, 0.5);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5), 0 0 20px rgba(56, 189, 248, 0.35);
+  backdrop-filter: blur(12px);
+  padding: 6px 14px;
+  border-radius: var(--border-radius-full);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  z-index: 10;
+  pointer-events: none;
+  animation: floatBubble 3.5s ease-in-out infinite alternate;
+}
+
+.welcome-wave {
+  display: inline-block;
+  font-size: 1.15rem;
+  animation: waveHand 2.2s infinite ease-in-out;
+  transform-origin: 70% 70%;
+}
+
+.welcome-text {
+  font-family: var(--font-mono);
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: #f8fafc;
+  letter-spacing: -0.01em;
+  background: linear-gradient(135deg, #ffffff 0%, #38bdf8 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@keyframes waveHand {
+  0%, 100% { transform: rotate(0deg); }
+  20% { transform: rotate(14deg); }
+  40% { transform: rotate(-8deg); }
+  60% { transform: rotate(14deg); }
+  80% { transform: rotate(-4deg); }
+}
+
+@keyframes floatBubble {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-7px); }
 }
 
 /* Floating Tech Pills on Portrait */
@@ -377,6 +441,7 @@
   color: var(--text-primary);
   backdrop-filter: blur(10px);
   animation: floatPill 4s ease-in-out infinite alternate;
+  z-index: 5;
 }
 
 .pill-1 {
@@ -394,6 +459,48 @@
 @keyframes floatPill {
   0% { transform: translateY(0); }
   100% { transform: translateY(-8px); }
+}
+
+/* Avatar Switcher Control */
+.avatar-toggle-control {
+  margin-top: 18px;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 4px;
+  background: rgba(15, 23, 42, 0.8);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--border-radius-full);
+  backdrop-filter: blur(12px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  z-index: 5;
+}
+
+.avatar-toggle-btn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 14px;
+  border-radius: var(--border-radius-full);
+  border: none;
+  background: transparent;
+  color: var(--text-muted);
+  font-size: 0.78rem;
+  font-family: var(--font-sans);
+  font-weight: 600;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.avatar-toggle-btn:hover {
+  color: var(--text-primary);
+}
+
+.avatar-toggle-btn.active {
+  background: linear-gradient(135deg, rgba(56, 189, 248, 0.25), rgba(99, 102, 241, 0.25));
+  color: var(--accent-cyan);
+  border: 1px solid rgba(56, 189, 248, 0.4);
+  box-shadow: 0 0 12px rgba(56, 189, 248, 0.25);
 }
 
 /* ==========================================================================
@@ -1232,6 +1339,16 @@
   .hero-portrait-frame {
     width: 260px;
     height: 260px;
+  }
+  
+  .welcome-speech-bubble {
+    top: -16px;
+    left: -10px;
+    padding: 5px 12px;
+  }
+  
+  .welcome-text {
+    font-size: 0.75rem;
   }
   
   .pill-1 {
